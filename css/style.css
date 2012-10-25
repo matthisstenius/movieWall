@@ -5,6 +5,11 @@
     background: url('../img/cream_dust.png');
   }
   
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
 /*
   Image replacement HTML5 Boilerplate
 */
@@ -39,6 +44,10 @@
 */
   header {
     background-color: #8f2513;
+    
+  }
+  
+  .header-main {
     padding: 5px 0;
   }
   
@@ -48,11 +57,10 @@
     font-family: "Lobster", serif;
     text-decoration: none;
     color: #fff;
-    font-size: 30px;
-    letter-spacing: 4px;
+    font-size: 40px;
     float: left;
   }
-  
+    
   header nav {
     float: right;
     margin-right: 35px;
@@ -79,10 +87,49 @@
   }
   
   header nav a:hover, .active {
-    background-color: #faf1e6;
+    background-color: #f7f2eb;
     color: #424254;
   }
   
+  header .header-sub {
+    background-color: #F0F0F0;
+  }
+  
+  .header-sub .login-detail {
+    float: right;
+    margin-top: 5px;
+    width: 270px;
+  }
+  
+  .header-sub .login-detail img {
+    float: left;
+    width: 40px;
+    margin-right: 5px;
+  }
+  
+  .header-sub .login-detail a {
+    margin-top: 1em;
+    margin-left: 10px;
+  }
+  
+  .header-sub .login-detail a, .header-sub .login-detail p {
+    float: left;
+  }
+/*
+  Search-bar
+*/
+  .search-container form {
+    text-align: center;
+  }
+  
+  .search-container input {
+    border-radius: 10px;
+    width: 300px;
+    min-height: 25px;
+    padding: 5px;
+    outline: none;
+    border: 1px #ccc solid;
+  }
 /*
   Movies
 */
