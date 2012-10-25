@@ -1,0 +1,93 @@
+/*
+  General
+*/
+  html {
+    background: url('../img/cream_dust.png');
+  }
+  
+/*
+  Image replacement HTML5 Boilerplate
+*/
+  .ir {
+      background-color: transparent;
+      border: 0;
+      overflow: hidden;
+      /* IE 6/7 fallback */
+      *text-indent: -9999px;
+  }
+  
+  .ir:before {
+      content: "";
+      display: block;
+      width: 0;
+      height: 100%;
+  }
+
+/*
+  Typography
+*/
+  h1, h2, h3, h4 {
+    font-family: 'Nunito', Arial, sans-serif;
+  }
+  
+  p, a {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+  }
+  
+/*
+  Header
+*/
+  header {
+    background-color: #8f2513;
+    padding: 5px 0;
+  }
+  
+  .logo {
+    display: block;
+    margin-top: 7px;
+    font-family: "Lobster", serif;
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 4px;
+    float: left;
+  }
+  
+  header nav {
+    float: right;
+    margin-right: 35px;
+  }
+  
+  header nav ul {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  header nav li {
+    float: left;
+    list-style: none;
+    margin-right: 20px;
+  }
+  
+  header nav a {
+    display: block;
+    border-radius: 3px;
+    padding: 7px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  header nav a:hover, .active {
+    background-color: #faf1e6;
+    color: #424254;
+  }
+  
+/*
+  Movies
+*/
+  .movie-wrapper {
+    margin-bottom: 30px;
+  }
+  
+ 
