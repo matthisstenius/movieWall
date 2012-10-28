@@ -10,6 +10,18 @@
     max-width: 100%;
     height: auto;
   }
+  
+  .wrapper {
+    padding: 0 10px;
+  }
+  
+  .main-content {
+    background-color: #fff;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #e1e1e4;
+  }
+  
 /*
   Image replacement HTML5 Boilerplate
 */
@@ -33,10 +45,40 @@
 */
   h1, h2, h3, h4 {
     font-family: 'Nunito', Arial, sans-serif;
+    color: #333333;
   }
   
   p, a {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
+  }
+  
+  a {
+    color: #7F94B0;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+/*
+  Button
+*/
+  .button {
+    display: block;
+    padding: 5px;
+    border-radius: 3px;
+    color: #fff;
+    text-align: center;
+    width: 100px;
+  }
+  
+  .btn-more {
+    background-color: #bd2b12;
+  }
+  
+  .btn-more:hover {
+    text-decoration: none;
+    background-color: #DF6760;
   }
   
 /*
@@ -44,11 +86,10 @@
 */
   header {
     background-color: #8f2513;
-    
   }
   
   .header-main {
-    padding: 5px 0;
+    padding: 5px 10px;
   }
   
   .logo {
@@ -60,10 +101,13 @@
     font-size: 40px;
     float: left;
   }
+  
+  .logo:hover {
+    text-decoration: none;
+  }
     
   header nav {
     float: right;
-    margin-right: 35px;
   }
   
   header nav ul {
@@ -75,6 +119,10 @@
     float: left;
     list-style: none;
     margin-right: 20px;
+  }
+  
+  header nav li:last-child {
+    margin-right: 0;
   }
   
   header nav a {
@@ -89,16 +137,18 @@
   header nav a:hover, .active {
     background-color: #f7f2eb;
     color: #424254;
+    text-decoration: none;
   }
   
   header .header-sub {
     background-color: #F0F0F0;
+    padding: 0 10px;
   }
   
   .header-sub .login-detail {
     float: right;
-    margin-top: 5px;
-    width: 270px;
+    margin: 5px 5px 0 0;
+    width: 210px;
   }
   
   .header-sub .login-detail img {
@@ -135,6 +185,17 @@
 */
   .movie-wrapper {
     margin-bottom: 30px;
+  }
+  
+  .movie-wrapper article {
+    width: 220px;
+    margin: 0 auto;
+  }
+/*
+  Footer
+*/
+  footer {
+    text-align: center;
   }
   
  

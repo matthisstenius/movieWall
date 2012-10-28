@@ -28,7 +28,6 @@ body {
 .grid {
 	width: 100%;
 	max-width: 1140px;
-	min-width: 755px;
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -122,7 +121,7 @@ body {
 	width: 58.33%
 }
 
-@media handheld, only screen and (max-width: 767px) {
+@media handheld, only screen and (max-width: 480px) {
 
 	
 	.grid {
@@ -143,5 +142,17 @@ body {
 		margin-bottom: 10px;
 		padding-left: 20px;
 		padding-right: 20px;
+	}
+}
+
+@media handheld, only screen and (max-width: 930px) {
+	.col-3-12 {
+		width: 33.33%;
+	}
+}
+
+@media handheld, only screen and (max-width: 738px) {
+	.col-3-12 {
+		width: 50%;
 	}
 }
