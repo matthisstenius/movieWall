@@ -147,12 +147,18 @@ body {
 	 .header-main nav, .header-main .logo {
 		float: none;
 	}
+
 	
-	.header-main nav {
-		margin: 0 auto;
+	.header-main ul {
+		margin: 10px auto;
 	}
+	
 	.logo {
 		text-align: center;
+	}
+	
+	.header-sub .login-detail {
+		margin: 0 auto;
 	}
 }
 

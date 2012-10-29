@@ -48,6 +48,14 @@
     color: #333333;
   }
   
+  h2 {
+    font-size: 19px;
+  }
+  
+  h3 {
+    font-size: 17px;
+  }
+  
   p, a {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
   }
