@@ -26,7 +26,6 @@
 
 				<nav>
 					<ul>
-						<li><a class="active" href="">My wall</a></li>
 						<li><a href="">faq</a></li>
 						<li><a href="">Contact</a></li>
 					</ul>
@@ -35,11 +34,13 @@
 
 			<div class="header-sub">
 				<div class="grid header-sub-inner">
-					<div class="login-detail">
-						<img class="" src="img/avatar.jpg" alt="Avatar">
-						<p>Matthis Stenius</p>
-						<a href="">Log out</a>
-					</div>
+					<form class="login" action="" method="post">
+						<label for="username">E-mail</label>
+						<input type="email" name="e-mail" placeholder="e.g john@doe.com">
+						<label for="password">Password</label>
+						<input type="password" name="password" placeholder="Password">
+						<input class="button" name="submit" type="submit" value="Log in">
+					</form>
 				</div> <!--end .header-sub-->
 			</div>
 		</header>

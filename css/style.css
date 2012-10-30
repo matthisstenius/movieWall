@@ -88,7 +88,73 @@
     text-decoration: none;
     background-color: #DF6760;
   }
+
+/*
+  Forms
+*/
+  form {
+    margin-bottom: 20px;
+  }
   
+  fieldset {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  textarea,
+  select {
+    border: 1px solid #ccc;
+    padding: 6px 4px;
+    outline: none;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    font: 13px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #777;
+    margin: 0;
+    width: 210px;
+    max-width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    background: #fff;
+  }
+  
+  select {
+    padding: 0;
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    border: 1px solid #aaa;
+    color: #444;
+    -moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
+    box-shadow:  0 0 3px rgba(0,0,0,.2);
+  }
+  
+  textarea {
+    min-height: 60px;
+  }
+  
+  label,
+  legend {
+    display: block;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  
+  select {
+    width: 220px;
+  }
+  
+  input[type="checkbox"] {
+    display: inline;
+  }
+     
 /*
   Header
 */
@@ -147,7 +213,10 @@
     color: #424254;
     text-decoration: none;
   }
-  
+
+/*
+  Subheader
+*/
   header .header-sub {
     background-color: #F0F0F0;
     padding: 0 10px;
@@ -173,6 +242,34 @@
   .header-sub .login-detail a, .header-sub .login-detail p {
     float: left;
   }
+  
+  .login {
+    float: right;
+    margin: 10px 0;
+  }
+  
+  .login input {
+    display: inline-block;
+    width: 180px;
+    margin-bottom: 0;
+  }
+  
+  .login input[type="submit"] {
+    border: none;
+    width: auto;
+    padding: 5px 10px;
+    background-image: #429212;
+    background-image: -webkit-linear-gradient(bottom, #429212, #5cc51d);
+    background-image: -moz-linear-gradient(bottom, #429212, #5cc51d);
+    background-image: -o-linear-gradient(bottom, #429212, #5cc51d);
+    background-image: -ms-linear-gradient(bottom, #429212, #5cc51d);
+    background-image: linear-gradient(bottom, #429212, #5cc51d);
+  }
+  
+  .login label {
+    display: inline-block;
+  }
+  
 /*
   Search-bar
 */
