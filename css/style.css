@@ -269,6 +269,10 @@
     border: none;
     width: auto;
     padding: 5px 10px;
+    
+  }
+  
+  .login .btn-login {
     background-image: #429212;
     background-image: -webkit-linear-gradient(bottom, #429212, #5cc51d);
     background-image: -moz-linear-gradient(bottom, #429212, #5cc51d);
@@ -277,6 +281,15 @@
     background-image: linear-gradient(bottom, #429212, #5cc51d);
   }
   
+  .login .btn-register {
+    background-image: #b72d16;
+    background-image: -webkit-linear-gradient(bottom, #b72d16, #cd3217);
+    background-image: -moz-linear-gradient(bottom, #b72d16, #cd3217);
+    background-image: -o-linear-gradient(bottom, #b72d16, #cd3217);
+    background-image: -ms-linear-gradient(bottom, #b72d16, #cd3217);
+    background-image: linear-gradient(bottom, #b72d16, #cd3217);
+
+  }
   .login label {
     display: inline-block;
   }
@@ -342,6 +355,19 @@
     background-image: -o-linear-gradient(bottom, #429212, #5cc51d);
     background-image: -ms-linear-gradient(bottom, #429212, #5cc51d);
     background-image: linear-gradient(bottom, #429212, #5cc51d);
+  }
+  
+  .feature-wrap {
+    margin: 20px 0;
+  }
+  
+  .feature-wrap article {
+    padding-left: 20px;
+  }
+
+  
+  .feature-wrap article h2 {
+    text-align: center;
   }
 /*
   Footer
