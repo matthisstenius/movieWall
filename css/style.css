@@ -295,15 +295,23 @@
 */
   .search-container {
     text-align: center;
+    margin-top: 20px;
   }
   
-  .search-container input {
+  .search-container .field {
     border-radius: 10px;
     width: 300px;
     min-height: 25px;
     padding: 5px;
     outline: none;
     border: 1px #ccc solid;
+  }
+  
+  .search-container .button {
+    display: inline-block;
+    border-radius: 0 10px 10px 0;
+    padding: 9px;
+    margin-left: -63px;
   }
 /*
   Movie grid
