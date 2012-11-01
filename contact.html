@@ -6,16 +6,13 @@
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width">
 
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
-		<link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+		<link rel="shortcut icon" href="img/apple-touch-icon.png">
+		<link href="favicon.ico" rel="favicon" type="image/x-icon">
 
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Lobster|Nunito' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/simplegrid.css" >
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/normalize.css" type="text/css">
+		<link rel="stylesheet" href="css/simplegrid.css" type="text/css" >
+		<link rel="stylesheet" href="css/style.css" type="text/css">
 		<script src="js/modernizr-2.6.1.min.js"></script>
 	</head>
 	<body>
@@ -50,13 +47,13 @@
 				<div class="contact-form">
 					<form action="" method="post">
 						<label for="name">Name</label>
-						<input id="name" name="name" type="text">
+						<input id="name" name="name" type="text" placeholder="John Doe" required>
 						<label for="email">E-mail</label>
-						<input id="email" name="email" type="email">
+						<input id="email" name="email" type="email" placeholder="john@doe.com" required>
 						<label for="subject">Subject</label>
-						<input id="subject" name="subject" type="text">
+						<input id="subject" name="subject" type="text" required>
 						<label for="message">Message</label>
-						<textarea id="message" name="message"></textarea>
+						<textarea id="message" name="message" placeholder="Type your message here" required></textarea>
 						<p><input class="button btn-green" type="submit" value="Send"></p>
 					</form>
 				</div> <!--end .contact-form-->
