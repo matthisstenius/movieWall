@@ -5,7 +5,7 @@
     background: url('../img/cream_dust.png');
   }
   
-  img {
+  img, iframe {
     display: block;
     max-width: 100%;
     height: auto;
@@ -17,6 +17,7 @@
   
   .main-content {
     background-color: #fff;
+    margin-top: 20px;
     padding: 0 10px;
     border-radius: 5px;
     border: 1px solid #e1e1e4;
@@ -69,8 +70,17 @@
     text-decoration: none;
   }
   
+  p {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  
   a:hover {
     text-decoration: underline;
+  }
+  
+  li {
+    margin: 5px 0;
   }
 /*
   Button
@@ -90,14 +100,25 @@
     text-decoration: none;
   }
   
-  .btn-more {
-    background-color: #bd2b12;
-    width: 100px;
+    
+  .btn-green {
+    background-image: #429212;
+    background-image: -webkit-linear-gradient(bottom, #429212, #5cc51d);
+    background-image: -moz-linear-gradient(bottom, #429212, #5cc51d);
+    background-image: -o-linear-gradient(bottom, #429212, #5cc51d);
+    background-image: -ms-linear-gradient(bottom, #429212, #5cc51d);
+    background-image: linear-gradient(bottom, #429212, #5cc51d);
   }
   
-  .btn-more:hover {
-    background-color: #DF6760;
+ .btn-red {
+    background-image: #b72d16;
+    background-image: -webkit-linear-gradient(bottom, #b72d16, #cd3217);
+    background-image: -moz-linear-gradient(bottom, #b72d16, #cd3217);
+    background-image: -o-linear-gradient(bottom, #b72d16, #cd3217);
+    background-image: -ms-linear-gradient(bottom, #b72d16, #cd3217);
+    background-image: linear-gradient(bottom, #b72d16, #cd3217);
   }
+
 
 /*
   Forms
@@ -125,7 +146,7 @@
     font-size: 13px;
     color: #777;
     margin: 0;
-    width: 210px;
+    width: 400px;
     max-width: 100%;
     display: block;
     margin-bottom: 20px;
@@ -148,12 +169,14 @@
   }
   
   textarea {
-    min-height: 60px;
+    min-height: 100px;
+    
   }
   
   label,
   legend {
     display: block;
+    margin-bottom: 5px;
     font-weight: bold;
     font-size: 13px;
   }
@@ -164,6 +187,10 @@
   
   input[type="checkbox"] {
     display: inline;
+  }
+  
+  input[type="submit"] {
+    border: none;
   }
      
 /*
@@ -266,30 +293,11 @@
   }
   
   .login input[type="submit"] {
-    border: none;
     width: auto;
     padding: 5px 10px;
     
   }
   
-  .login .btn-login {
-    background-image: #429212;
-    background-image: -webkit-linear-gradient(bottom, #429212, #5cc51d);
-    background-image: -moz-linear-gradient(bottom, #429212, #5cc51d);
-    background-image: -o-linear-gradient(bottom, #429212, #5cc51d);
-    background-image: -ms-linear-gradient(bottom, #429212, #5cc51d);
-    background-image: linear-gradient(bottom, #429212, #5cc51d);
-  }
-  
-  .login .btn-register {
-    background-image: #b72d16;
-    background-image: -webkit-linear-gradient(bottom, #b72d16, #cd3217);
-    background-image: -moz-linear-gradient(bottom, #b72d16, #cd3217);
-    background-image: -o-linear-gradient(bottom, #b72d16, #cd3217);
-    background-image: -ms-linear-gradient(bottom, #b72d16, #cd3217);
-    background-image: linear-gradient(bottom, #b72d16, #cd3217);
-
-  }
   .login label {
     display: inline-block;
   }
@@ -310,7 +318,7 @@
     border: 1px #ccc solid;
   }
 /*
-  Movies
+  Movie grid
 */
   .movie-wrapper {
     margin-bottom: 30px;
@@ -320,7 +328,56 @@
     width: 220px;
     margin: 0 auto;
   }
+  
+  .movie-wrapper .button {
+    width: 100px;
+    margin-top: 10px;
+  }
 
+/*
+  Movie detail
+*/
+  .movie-info {
+    margin-bottom: 20px;
+    padding: 0 60px 20px 20px;
+  }
+  
+  .movie-info img {
+    float: left;
+    margin-right: 20px;
+  }
+  
+  .movie-info p {
+  }
+  
+  .movie-info .button {
+    width: 150px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  
+  .movie-meta {
+    margin-top: 50px;
+    padding: 0 0 0 20px;
+    border-left: 3px #b72d16 solid;
+  }
+  
+  .movie-meta span {
+    font-weight: bold;
+  }
+   .movie-meta ul {
+     padding-left: 0;
+   }
+   
+  .movie-meta li {
+    list-style: none;
+  }
+  
+  .movie-trailer {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  
 /*
   Home
 */
@@ -369,6 +426,18 @@
   .feature-wrap article h2 {
     text-align: center;
   }
+  
+/*
+  Contact
+*/
+  .contact-form {
+    margin: 20px 0 0 0;
+  }
+  
+  .contact-form input[type="submit"] {
+    width: 200px;
+  }
+  
 /*
   Footer
 */
@@ -376,4 +445,117 @@
     text-align: center;
   }
   
+/*
+  Media queries
+*/
+   
+  @media handheld, only screen and (max-width: 930px) {
+    .col-3-12 {
+      width: 33.33%;
+    }
+  }
+  
+  @media handheld, only screen and (max-width: 738px) {
+    .col-3-12, .col-4-12 {
+      width: 50%;
+    }
+    
+    
+    .welcome {
+      background:  url('../img/bg_blur.jpg') no-repeat;
+    }
+    
+    .welcome h1 {
+      font-size: 30px;
+    }
+    
+    .welcome p {
+      width: 100%;
+    }
+    
+    .col-8-12 {
+      width: 100%;
+    }
+    
+    .movie-meta {
+      border-top: 3px #b72d16 solid;
+      border-left: none;
+    }
+    
+    form.login {
+      float: none;
+    }
+    
+    .login input[type="email"],
+    .login input[type="password"] {
+      display: block;
+      width: 70%;
+      margin-bottom: 5px;
+    }
+  }
+  
+  @media handheld, only screen and (max-width: 480px) {
+    .grid {
+      width: 100%;
+      min-width: 0;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  
+    [class*='col-'] {
+      width: 100%;
+      float: none;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+     .header-main nav, .header-main .logo {
+      float: none;
+    }
+  
+  
+    .header-main ul {
+      margin: 10px 0;
+      padding: 0;
+    }
+  
+  
+    .header-sub .login-detail {
+      float: none;
+    }
+  
+    .feature-wrap article {
+      padding: 0;
+    }
+    
+    .contact-form input[value="text"] {
+      width: 100%;
+    }
+  }
+  
+/*
+  Print
+*/
+  @media print {
+    .header-main nav, .login-detail, form,
+    .login, .welcome .button, .movie-wrapper .button {
+      display: none;
+    }
+    
+    .col-3-12 {
+      width: 50%;
+    }
+    
+    .main-content {
+      border: none;
+    }
+    
+    .movie-info img {
+      float: none;
+    }
+  }
  
