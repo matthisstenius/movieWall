@@ -542,6 +542,10 @@
     .register {
       width: 100%;
     }
+    
+    .search-container .field {
+      width: 90%;
+    }
   }
   
 /*
