@@ -280,10 +280,13 @@
     margin-bottom: 0;
   }
   
-  .login input[type="submit"] {
+  .login input[type="submit"], .login .button {
     width: auto;
     padding: 5px 10px;
-    
+  }
+  
+  .login .button {
+    display: inline-block;
   }
   
   .login label {
