@@ -15,7 +15,7 @@
     padding: 0 10px;
   }
   
-  .main-content {
+  .main-content, .register {
     background-color: #fff;
     margin-top: 20px;
     padding: 0 10px;
@@ -23,6 +23,11 @@
     border: 1px solid #e1e1e4;
   }
   
+  .fine-print {
+    font-size: 13px;
+    color: #48484c;
+    font-style: italic;
+  }
 /*
   Image replacement HTML5 Boilerplate
 */
@@ -437,7 +442,14 @@
   .contact-form input[type="submit"] {
     width: 200px;
   }
-  
+
+/*
+  Register
+*/
+  .register {
+    width: 340px;
+    margin: 20px auto;
+  }
 /*
   Footer
 */
@@ -533,6 +545,10 @@
     }
     
     .contact-form input[value="text"] {
+      width: 100%;
+    }
+    
+    .register {
       width: 100%;
     }
   }
