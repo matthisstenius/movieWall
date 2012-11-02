@@ -98,6 +98,7 @@
     background-image: linear-gradient(bottom, #429212, #5cc51d);
   }
   
+  
  .btn-red {
     background-image: #b72d16;
     background-image: -webkit-linear-gradient(bottom, #b72d16, #cd3217);
@@ -186,6 +187,7 @@
 */
   header {
     background-color: #8f2513;
+    border-bottom: 1px #ccc solid;
   }
   
   .header-main {
@@ -443,6 +445,10 @@
   .register {
     width: 340px;
     margin: 20px auto;
+  }
+  
+  .register .button {
+    width: 159px;
   }
 /*
   Footer
